@@ -7,7 +7,7 @@ export default function App() {
   let numeros = [];
   for (let i = 0; i < 6; i++) {
     let n = Math.floor(Math.random() * (60 - i));
-    numeros = [...numeros, numerosPossiveis[n]];
+    numeros = [...numeros, numerosPossiveis[n] + 1];
     numerosPossiveis.splice(n,1);
   }
 
